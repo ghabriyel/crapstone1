@@ -1,0 +1,14 @@
+main {
+    background-color: rgba(50, 25, 255, 0.8);
+    box-shadow: 1px 1px 1px #000 inset;
+}
+
+.reservationHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservationContent {
+    background-color: white;
+    box-shadow: 1px 1px 1px #000 inset;
+}
