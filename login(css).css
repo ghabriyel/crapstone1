@@ -1,0 +1,73 @@
+body {
+    
+    background-image: url('simbahan.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    background-color: rgba(0, 38, 255, 0.7);
+    display: block;
+    margin: -0.48rem;
+    position: sticky;
+    top: 0;
+}
+
+.login {
+    margin: 25vh auto;
+    color: white;
+    width: 55vh;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 1px 1px 1px #fff, 1px 1px 1px #fff inset;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.SignInButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 40vh;
+    margin-top: 1rem;
+}
+
+.textInputs {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  padding: 10px;
+}
+
+
+

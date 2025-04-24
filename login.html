@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="login(css).css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </nav>
+
+    <form class="login">
+        <h1>Sign in</h1>
+        <div class="formLogin">
+            <label>Email</label>
+            <input type="email" placeholder="@Email" class="textInputs" required>
+            <label>Password</label>
+            <input type="password" placeholder="Password" class="textInputs">
+            <div class="SignInButtons">
+                <button type="submit" class="formButton">Login</button>
+                <button type="button" class="formButton" id="register">Register</button>
+            </div>
+        </div>
+    </form>
+
+<div class="form-overlay" id="formOverlay"></div>
+<div class="login popUp" id="registerForm">
+    <div class="formLogin">
+            <h1>Register</h1>
+
+            <label>First Name</label>
+            <input type="text" placeholder="First Name" class="textInputs SanitizeInputField" required>
+
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name" class="textInputs SanitizeInputField" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="@Email" class="textInputs" required>
+      
+            <label>Password</label>
+            <input type="password" placeholder="Password" class="textInputs" required>
+      
+            <div class="SignInButtons">
+                <button type="submit" class="formButton">Register</button>
+                <button type="button" class="formButton" id="cancelButton">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="(js)text_sanitizer.js"></script>
+    <script src="(js)registerHider.js"></script>
+</body>
+</html>

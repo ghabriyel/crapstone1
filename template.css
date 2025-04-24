@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(0, 0, 255, 0.651) blue;
+    scrollbar-width:thin;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9f9 no-repeat fixed center / cover;
+}
+
+main { /* for the main content dont touch, if you touch this the sidebar will overlap with main content */
+    flex: 1;
+    transition: margin-left 0.3s;
+    padding: 1rem;
+    margin-left: 300px;
+}
+
+nav ul { /* for the menu bar numbering dont touch, cleans up the side bar */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+nav a { /* for the menu link dont touch, cleans the anchor */
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 0.875rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.logo img { /* for the logo dont touch, if you touch this the logo fucks up */
+    height: 10vh;
+    border-radius: 55px;
+    border: #fff solid 8px;
+}
+
+.textInputs { /* for text input , name every text input with this class*/
+    border: none;
+    box-shadow: 1px 1px 1px #000 inset;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    color: blue;
+    opacity: 0.7;
+}
+
+.formButton { /* Form button style , for every FORM, use this class*/
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.generalButtons { /* General button style */
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.generalButtons:hover {
+    box-shadow: 1px 1px 1px #000 inset;
+    transition: 0.2s ease-in-out;
+}

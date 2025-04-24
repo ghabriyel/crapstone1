@@ -1,0 +1,55 @@
+/* Sidebar CSS  dont touch a single thing here*/
+
+#sidebarToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+aside {
+    position: fixed;
+    inset: 0 auto 0 0;
+    padding: 1rem;
+    width: 80px;
+    background-color: rgba(25, 0, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+#layoutWrapper {
+    display: flex;
+}
+
+#sidebar {
+    width: 225px;
+    padding-right: 2rem;
+    transition: width 0.3s;
+    margin-right: 5rem;
+}
+
+#sidebar.collapsed {
+    width: 5rem;
+    overflow: hidden;
+}
+
+#sidebar.collapsed ~ #mainContent {
+    margin-left: 80px;
+}
+
+#sidebar .headerLinks span {
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+#sidebar.collapsed .headerLinks a:not(#sidebarToggle) {
+    pointer-events: none;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+#sidebar.collapsed #arrowIcon {
+    transform: rotate(180deg);
+}
