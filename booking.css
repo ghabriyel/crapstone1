@@ -1,0 +1,161 @@
+.welcome-section {
+    background-image: url(simbahan.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 5em 0;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: #fff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.booking-container {
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+}
+
+/* Reservation Form Styles */
+.reservation-form {
+    flex: 1;
+    background: white;
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form h2 {
+    margin-bottom: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit-btn:hover {
+    background-color: #444;
+}
+
+/* Calendar Styles */
+.calendar-section {
+    width: 400px;
+    background: white;
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    margin-bottom: 1.5em;
+}
+
+.calendar-header-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5em;
+    text-align: center;
+}
+
+.calendar-grid div {
+    padding: 0.5em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.prev-month,
+.next-month {
+    color: #ccc;
+}
+
+.booked {
+    background-color: #ffb6c1;
+    color: #333;
+}
+
+.current {
+    background-color: #483d8b;
+    color: white;
+}
+
+.pending {
+    background-color: #87ceeb;
+    color: #333;
+}
+
+/* Calendar Legend */
+.calendar-legend {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.legend-color {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+
+.legend-color.booked {
+    background-color: #ffb6c1;
+}
+
+.legend-color.current {
+    background-color: #483d8b;
+}
+
+.legend-color.pending {
+    background-color: #87ceeb;
+}

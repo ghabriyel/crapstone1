@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Reservation</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="sidebar(css).css">
+</head>
+<body>
+    <div id="layoutWrapper">
+        <aside id="sidebar">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <ul class="headerLinks">
+                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="schedule.html"><span>Mass Schedule</span></a></li>
+                    <li><a href="events.html"><span>Events</span></a></li>
+                    <li><a href="announcements.html"><span>Announcements</span></a></li>
+                    <li><a href="booking.html"><span>Booking</span></a></li>
+                    <li><a href="index.html"><span>Sign out</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="welcome-section">
+                <h1>Make a Reservation</h1>
+            </div>
+            <div class="booking-container">
+                <div class="reservation-form">
+                    <h2>Make a Reservation</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="purpose">Purpose</label>
+                            <select id="purpose" required>
+                                <option value="">Select purpose</option>
+                                <option value="baptism">Baptism</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="confirmation">Confirmation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Select date</label>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" placeholder="Enter your contact number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Name (Real name or in fb/messenger if possible)</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+
+                <div class="calendar-section">
+                    <div class="calendar-header">
+                        <h2>Mon, Aug 17</h2>
+                    </div>
+                    <div class="calendar">
+                        <div class="calendar-header-row">
+                            <div>S</div>
+                            <div>M</div>
+                            <div>T</div>
+                            <div>W</div>
+                            <div>T</div>
+                            <div>F</div>
+                            <div>S</div>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="prev-month">26</div>
+                            <div class="prev-month">27</div>
+                            <div class="prev-month">28</div>
+                            <div class="prev-month">29</div>
+                            <div class="prev-month">30</div>
+                            <div class="prev-month">31</div>
+                            <div>1</div>
+                            <div>2</div>
+                            <div class="booked">3</div>
+                            <div class="booked">4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                            <div>10</div>
+                            <div>11</div>
+                            <div>12</div>
+                            <div>13</div>
+                            <div>14</div>
+                            <div>15</div>
+                            <div>16</div>
+                            <div class="current">17</div>
+                            <div>18</div>
+                            <div>19</div>
+                            <div>20</div>
+                            <div>21</div>
+                            <div>22</div>
+                            <div>23</div>
+                            <div>24</div>
+                            <div>25</div>
+                            <div class="pending">26</div>
+                            <div class="pending">27</div>
+                            <div class="pending">28</div>
+                            <div class="pending">29</div>
+                            <div>30</div>
+                            <div class="next-month">1</div>
+                            <div class="next-month">2</div>
+                            <div class="next-month">3</div>
+                            <div class="next-month">4</div>
+                            <div class="next-month">5</div>
+                        </div>
+                    </div>
+                    <div class="calendar-legend">
+                        <div class="legend-item">
+                            <div class="legend-color booked"></div>
+                            <span>Booked/Reserved</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color current"></div>
+                            <span>Current Date</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color pending"></div>
+                            <span>Pending Date</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="sidebar_function.js"></script>
+</body>
+</html>

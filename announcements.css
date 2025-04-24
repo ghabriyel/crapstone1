@@ -1,0 +1,71 @@
+.welcome-section {
+    background-image: url(simbahan.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 5em 0;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: #fff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.content-wrapper {
+    padding: 2em;
+}
+
+.content-wrapper h1 {
+    margin-bottom: 1em;
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 1em;
+}
+
+.announcement-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.announcement-card .subtitle {
+    color: #666;
+    font-size: 1em;
+    margin: 0.5em 0 1.5em 0;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.schedule-item {
+    padding: 0.5em 0;
+}
+
+.schedule-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Emoji styling */
+.schedule-item p span {
+    margin-left: 0.5em;
+}
