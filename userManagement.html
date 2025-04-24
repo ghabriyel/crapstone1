@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="sidebar(css).css">
+    <link rel="stylesheet" href="userManagement(css).css">
+</head>
+<body>
+    
+    <div class="layoutWrapper">
+        <aside id="sidebar">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <ul class="headerLinks">
+                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="#"><span>Schedule</span></a></li>
+                    <li><a href="#"><span>Events</span></a></li>
+                    <li><a href="#"><span>Announcements</span></a></li>
+                    <li><a href="login.html"><span>Sign in</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="userManagementHeader">
+                <h1>User Management</h1>
+                <div class="searchBar">
+                    <input type="text" class="SanitizeInputField searchInput" placeholder="search">
+                    <button class="searchButton"><svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" height="0.8rem" viewBox="0 0 24 24">
+                        <circle cx="10" cy="10" r="7" stroke="black" stroke-width="2" fill="none"/>
+                        <line x1="15" y1="15" x2="22" y2="22" stroke="black" stroke-width="2"/>
+                      </svg></button>
+                </div>
+                <div class="accountButtons">
+                    <button class="generalButtons">Active Accounts</button>
+                    <button class="generalButtons">Deactivated Accounts</button>
+                </div>
+            </div>
+            <div class="userManagementContent">
+                <div class="tableContainer">
+                    <table id="usersTable">
+                        <thead>
+                            <tr>
+                                <th>Role</th>
+                                <th>Parishioner</th>
+                                <th>Email</th>
+                                <th>Date Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userTableBody">
+                            <tr>
+                                <td>Admin</td>
+                                <td>John Doe</td>
+                                <td>dummy data</td>
+                                <td>dummy data</td>
+                                <td>
+                                    <div class="editUser">
+                                        <button class="actionButton">Activate</button>
+                                        <button class="actionButton">Deactivate</button>
+                                        <button class="actionButton">Demote</button>
+                                        <button class="actionButton">Promote</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    
+    <script src="sidebar_function.js"></script>
+    <script src="(js)text_sanitizer.js"></script>
+</body>
+</html>
