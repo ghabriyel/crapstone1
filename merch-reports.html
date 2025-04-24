@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise Reports</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="sidebar(css).css">
+</head>
+<body>
+    <div id="layoutWrapper">
+        <aside id="sidebar">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <ul class="headerLinks">
+                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="schedule.html"><span>Mass Schedule</span></a></li>
+                    <li><a href="events.html"><span>Events</span></a></li>
+                    <li><a href="announcements.html"><span>Announcements</span></a></li>
+                    <li><a href="booking.html"><span>Booking</span></a></li>
+                    <li><a href="reports.html"><span>Reports</span></a></li>
+                    <li><a href="index.html"><span>Sign out</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="welcome-section">
+                <h1>Merchandise Reports</h1>
+            </div>
+            <div class="reports-container">
+                <div class="reports-header">
+                    <h2>Monthly Merchandise Summary</h2>
+                    <div class="date-filter">
+                        <select class="month-select">
+                            <option>January 2026</option>
+                            <option>February 2026</option>
+                            <option>March 2026</option>
+                            <option selected>April 2026</option>
+                        </select>
+                        <button class="generate-btn">Generate Report</button>
+                    </div>
+                </div>
+
+                <div class="reports-grid">
+                    <!-- Monthly Sales -->
+                    <div class="report-card">
+                        <h3>Monthly Sales Overview</h3>
+                        <div class="report-content">
+                            <table class="report-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Quantity Sold</th>
+                                        <th>Stock Left</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>T-shirts</td>
+                                        <td>50</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candles</td>
+                                        <td>200</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rosaries</td>
+                                        <td>75</td>
+                                        <td>125</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Popular Items -->
+                    <div class="report-card">
+                        <h3>Most Popular Items</h3>
+                        <div class="report-content">
+                            <table class="report-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Total Sales</th>
+                                        <th>Popularity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Candles</td>
+                                        <td>200</td>
+                                        <td><span class="status-high">High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rosaries</td>
+                                        <td>75</td>
+                                        <td><span class="status-medium">Medium</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>T-shirts</td>
+                                        <td>50</td>
+                                        <td><span class="status-medium">Medium</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Stock Status -->
+                    <div class="report-card">
+                        <h3>Stock Status</h3>
+                        <div class="report-content">
+                            <table class="report-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Current Stock</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>T-shirts</td>
+                                        <td>150</td>
+                                        <td><span class="status-good">Good</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candles</td>
+                                        <td>300</td>
+                                        <td><span class="status-good">Good</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rosaries</td>
+                                        <td>125</td>
+                                        <td><span class="status-good">Good</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="sidebar_function.js"></script>
+    <script src="sidebar_function.js"></script>
+    <script src="general_number_sanitizer.js"></script>
+    <script src="text_sanitizer.js"></script>
+</body>
+</html>

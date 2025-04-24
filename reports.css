@@ -1,0 +1,180 @@
+.welcome-section {
+    background-image: url(simbahan.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 5em 0;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: #fff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.reports-container {
+    padding: 2em;
+    background-color: #4169E1;
+    margin: 2em;
+    border-radius: 8px;
+}
+
+.reports-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 0 1em;
+}
+
+.reports-header h2 {
+    color: white;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 1em;
+}
+
+.report-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5em;
+    transition: transform 0.2s;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.report-card h3 {
+    margin: 0 0 1em 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.report-content p {
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.report-stats {
+    margin: 1.5em 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.stat-value {
+    color: #333;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.view-report-btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #4169E1;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.view-report-btn:hover {
+    background-color: #3157c7;
+}
+
+/* Status indicators */
+.status-completed {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-upcoming {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.status-high {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-medium {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.status-good {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Table styles for individual report pages */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-table th {
+    background-color: #f8f9fa;
+    padding: 0.8em;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.report-table td {
+    padding: 0.8em;
+    border-bottom: 1px solid #eee;
+}
+
+.date-filter {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.month-select {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.generate-btn {
+    padding: 0.5em 1em;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

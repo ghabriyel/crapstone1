@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Dashboard</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="sidebar(css).css">
+</head>
+<body>
+    <div id="layoutWrapper">
+        <aside id="sidebar">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <ul class="headerLinks">
+                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="schedule.html"><span>Mass Schedule</span></a></li>
+                    <li><a href="events.html"><span>Events</span></a></li>
+                    <li><a href="announcements.html"><span>Announcements</span></a></li>
+                    <li><a href="booking.html"><span>Booking</span></a></li>
+                    <li><a href="index.html"><span>Sign out</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="welcome-section">
+                <h1>Reports Dashboard</h1>
+            </div>
+            <div class="reports-container">
+                <div class="reports-header">
+                    <h2>Available Reports</h2>
+                </div>
+                <div class="reports-grid">
+                    <!-- Sacrament Reports -->
+                    <div class="report-card">
+                        <h3>Sacrament Reports</h3>
+                        <div class="report-content">
+                            <p>View detailed reports about baptisms, weddings, and confirmations.</p>
+                            <div class="report-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Total Ceremonies</span>
+                                    <span class="stat-value">43</span>
+                                </div>
+                            </div>
+                            <a href="sacrament-reports.html" class="view-report-btn">View Report</a>
+                        </div>
+                    </div>
+
+                    <!-- Merchandise Reports -->
+                    <div class="report-card">
+                        <h3>Merchandise Reports</h3>
+                        <div class="report-content">
+                            <p>Track merchandise sales, inventory, and popular items.</p>
+                            <div class="report-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Items Tracked</span>
+                                    <span class="stat-value">3</span>
+                                </div>
+                            </div>
+                            <a href="merch-reports.html" class="view-report-btn">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="sidebar_function.js"></script>
+    <script src="sidebar_function.js"></script>
+    <script src="general_number_sanitizer.js"></script>
+    <script src="text_sanitizer.js"></script>
+</body>
+</html>
