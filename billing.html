@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="billing.css">
+    <link rel="stylesheet" href="sidebar(css).css">
+</head>
+<body>
+    <div id="layoutWrapper">
+        <aside id="sidebar">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <ul class="headerLinks">
+                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="schedule.html"><span>Mass Schedule</span></a></li>
+                    <li><a href="events.html"><span>Events</span></a></li>
+                    <li><a href="announcements.html"><span>Announcements</span></a></li>
+                    <li><a href="booking.html"><span>Booking</span></a></li>
+                    <li><a href="index.html"><span>Sign out</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="welcome-section">
+                <h1>Billing</h1>
+            </div>
+            <div class="billing-container">
+                <div class="billing-header">
+                    <h2>Billings</h2>
+                    <div class="search-section">
+                        <input type="search" placeholder="search" class="search-input">
+                        <button class="filter-btn">Pending Dates</button>
+                        <button class="filter-btn">Pending Merch</button>
+                    </div>
+                </div>
+                <div class="billing-table-container">
+                    <table class="billing-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Parishioner</th>
+                                <th>Email</th>
+                                <th>Items/Sacrament</th>
+                                <th>Amount</th>
+                                <th>Date Reserved</th>
+                                <th>Date Paid</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Merch</td>
+                                <td>Clarissa Skibidi</td>
+                                <td>ClarissaSkibidi@gmail.com</td>
+                                <td>T-shirt x2</td>
+                                <td></td>
+                                <td>March 29, 2026</td>
+                                <td>April 1, 2026</td>
+                                <td><span class="status-paid">Paid</span></td>
+                                <td>
+                                    <button class="btn-receipt">Print receipt</button>
+                                    <button class="btn-remove">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Merch</td>
+                                <td>Pepito</td>
+                                <td>Pepito@gmail.com</td>
+                                <td>T-shirt x1</td>
+                                <td></td>
+                                <td>March 29, 2026</td>
+                                <td>April 3, 2026</td>
+                                <td><span class="status-paid">Paid</span></td>
+                                <td>
+                                    <button class="btn-receipt">Print receipt</button>
+                                    <button class="btn-remove">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Reservation</td>
+                                <td>Abdul Shaheem</td>
+                                <td>Abdulakbar@gmail.com</td>
+                                <td>Wedding</td>
+                                <td></td>
+                                <td>March 1, 2026</td>
+                                <td>January 2, 2026</td>
+                                <td><span class="status-paid">Paid</span></td>
+                                <td>
+                                    <button class="btn-receipt">Print receipt</button>
+                                    <button class="btn-remove">Remove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="sidebar_function.js"></script>
+    <script src="general_number_sanitizer.js"></script>
+    <script src="text_sanitizer.js"></script>
+    <script src="billing.js"></script>
+</body>
+</html>

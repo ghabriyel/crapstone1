@@ -1,0 +1,126 @@
+.welcome-section {
+    background-image: url(simbahan.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 5em 0;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: #fff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.billing-container {
+    padding: 2em;
+    background-color: #4169E1;
+    margin: 2em;
+    border-radius: 8px;
+}
+
+.billing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 0 1em;
+}
+
+.billing-header h2 {
+    color: white;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.search-section {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.filter-btn {
+    padding: 0.5em 1em;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.billing-table-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+.billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+
+.billing-table th {
+    background-color: #4169E1;
+    color: white;
+    text-align: left;
+    padding: 1em;
+    font-weight: normal;
+}
+
+.billing-table td {
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.billing-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.status-paid {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.btn-receipt {
+    padding: 0.4em 0.8em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+
+.btn-remove {
+    padding: 0.4em 0.8em;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-receipt:hover {
+    background-color: #218838;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
