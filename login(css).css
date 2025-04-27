@@ -1,6 +1,6 @@
 body {
     
-    background-image: url('simbahan.png');
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-    background-color: rgba(0, 38, 255, 0.7);
+    background-color: rgba(255, 120, 20, 0.7);
     display: block;
     margin: -0.48rem;
     position: sticky;
@@ -17,13 +17,13 @@ nav {
 
 .login {
     margin: 25vh auto;
-    color: white;
+    background-color: white;
+    box-shadow: 4px 6px 6px #fd9142;
+    color: black;
     width: 55vh;
     padding: 2rem;
     text-align: center;
-    box-shadow: 1px 1px 1px #fff, 1px 1px 1px #fff inset;
     border-radius: 50px;
-    backdrop-filter: blur(20px);
 }
 
 .formLogin {

@@ -1,38 +1,11 @@
 main {
     background-color: rgba(50, 25, 255, 0.8);
+    box-shadow: 1px 1px 1px #000 inset;
 }
 
 .userManagementHeader {
     display: flex;
     justify-content: space-between;
-}
-
-.searchBar {
-    display: flex;
-    width: 40vh;
-    margin: auto;
-    justify-content: center;
-}
-
-.searchInput {
-    border: none;
-    margin: auto;
-    width: 100%;
-    border-radius: 20px 0px 0px 20px;
-    text-align: center;
-    color: blue;
-}
-
-.searchInput:focus {
-    outline: none;
-}
-
-.searchButton {
-    margin: auto;
-    border: none;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 0px 20px 20px 0px;
 }
 
 .accountButtons {
@@ -45,43 +18,4 @@ main {
 .userManagementContent {
     background-color: white;
     box-shadow: 1px 1px 1px #000 inset;
-}
-
-.tableContainer {
-    margin: 1rem;
-    padding: 1rem;
-}
-
-#usersTable {
-    width: 100%;
-    border-collapse: collapse;
-    
-}
-
-th, td {
-    max-width: 10vh;
-    padding: 1rem;
-    text-align: center;
-
-}
-
-td {
-    border-bottom: 1px blue solid;
-}
-
-thead{
-    background-color: rgba(50, 25, 255, 0.8);
-    color: black;
-    font-size: 1.2rem;
-    box-shadow: 1px 1px 1px #000;
-}
-
-#usersTableBody {
-    border: 1px solid black;
-}
-
-.editUser {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
