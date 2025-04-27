@@ -1,11 +1,12 @@
 .greetings {
-    background-image: url(simbahan.png);
+    background-image: url(simbahan2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     padding: 10em 0;
     margin: 0 2em;
     text-align: center;
+    border-radius: 50px;
 }
 
 .greetings h1 {
@@ -13,27 +14,25 @@
 }
 
 .announcementHeader {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 3px solid blue;
-}
-
-.announcementHeader a {
-    text-decoration: none;
-    color: black;
+    color: white;
+    margin:auto 3vh;
+    border-bottom: white 1px solid;
 }
 
 .announcementContent {
     display: flex;
     justify-content: space-evenly;
+    border-bottom: white 3px solid;
+    padding: 1em 0;
 }
 
-.news1, .news2, .news3 {
+.news {
     margin-top: 15px;
     height: 30vh;
     width: 40vh;
     background-color: #f9f9f9;
     color: black;
-    border: 1px solid black;
+    border-radius: 20px;
     text-align: center;
+    box-shadow: 1px 1px 1px #000 inset;
 }

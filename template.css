@@ -1,12 +1,13 @@
 html {
     scroll-behavior: smooth;
-    scrollbar-color: rgba(0, 0, 255, 0.651) blue;
+    scrollbar-color: #f9f9f9 #fd9412;
     scrollbar-width:thin;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f9f9f9 no-repeat fixed center / cover;
+    background-color: rgba(255, 165, 20, 0.7);
+
 }
 
 main { /* for the main content dont touch, if you touch this the sidebar will overlap with main content */
@@ -28,9 +29,13 @@ nav a { /* for the menu link dont touch, cleans the anchor */
     align-items: center;
     gap: 0.625rem;
     padding: 0.625rem 0.875rem;
-    color: #fff;
+    color: black;
     text-decoration: none;
     transition: 0.5s ease-in-out;
+}
+
+nav a:hover { /* for the menu link hover dont touch*/
+    color: white;
 }
 
 .logo img { /* for the logo dont touch, if you touch this the logo fucks up */
@@ -45,7 +50,7 @@ nav a { /* for the menu link dont touch, cleans the anchor */
     border-radius: 10px;
     text-align: center;
     width: 70%;
-    color: blue;
+    color: orangered;
     opacity: 0.7;
 }
 
@@ -53,7 +58,7 @@ nav a { /* for the menu link dont touch, cleans the anchor */
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border: none;
-    background-color: blue;
+    background-color: orange;
     color: white;
     font-size: 1rem;
 
@@ -73,4 +78,71 @@ nav a { /* for the menu link dont touch, cleans the anchor */
 .generalButtons:hover {
     box-shadow: 1px 1px 1px #000 inset;
     transition: 0.2s ease-in-out;
+}
+
+.searchBar {
+    display: flex;
+    width: 40vh;
+    margin: auto;
+    justify-content: center;
+}
+
+.searchInput {
+    border: none;
+    margin: auto;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    text-align: center;
+    color: orangered;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchButton {
+    margin: auto;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.tableContainer {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    max-width: 10vh;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+td {
+    border-bottom: 1px #fd9412 solid;
+}
+
+thead{
+    background-color: rgba(242, 181, 68, 0.8);
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 1px #000;
+}
+
+#usersTableBody {
+    border: 1px solid #fd9412;
+}
+
+.editUser {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
