@@ -8,7 +8,7 @@ function sanitizeContactNumber(event, maxNumberLength = 11) {
 
     if (input.length > maxNumberLength) {
         input = input.substring(0, maxNumberLength);
-        if (input.slice(0, 1) !== "0") {
+        if (input.slice(0, 2) !== "09") {
             alert("Please enter a valid contact number");
         }
     }
