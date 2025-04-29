@@ -14,8 +14,9 @@ aside {
     inset: 0 auto 0 0;
     padding: 1rem;
     width: 80px;
-    background-color: #fd9412;
+    background-color: #f8f3e3;
     backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 3px #23406e;
 }
 
 #layoutWrapper {
@@ -27,6 +28,7 @@ aside {
     padding-right: 2rem;
     transition: width 0.3s;
     margin-right: 5rem;
+
 }
 
 #sidebar.collapsed {

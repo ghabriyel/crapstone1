@@ -1,6 +1,14 @@
+body {
+    color: #23406e;
+}
 
-.welcome-section h1 {
+.welcome-section {
     color: #fff;
+    background-color: #e6a86c;
+    border-radius: 15px;
+    box-shadow: 1px 3px 3px #e45c43;
+    padding: 0.1rem 2rem 0.1rem 2rem;
+    margin-left: 1rem;
 }
 
 .booking-container {
@@ -45,14 +53,6 @@
     background-color: #ffb6c1;
 }
 
-.current {
-    background-color: #fd9142;
-}
-
-.pending {
-    background-color: #87ceeb;
-}
-
 /* Calendar Legend */
 .calendar-legend {
     margin-top: 2em;
@@ -73,6 +73,11 @@
     border-radius: 50%;
 }
 
+.calendar-header {
+    font-weight: bolder;
+    color: #23406e;
+}
+
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -86,6 +91,7 @@
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 5px;
+    color: #23406e;
   }
   
   .today {
@@ -101,3 +107,9 @@
     margin-bottom: 1em;
     font-size: 1.5em;
   }
+
+  .pending {
+    background-color: #87ceeb;
+    color: white;
+    font-weight: bold;
+}
