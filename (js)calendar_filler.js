@@ -15,17 +15,36 @@ const monthNames = [
 ];
 monthTitle.textContent = `${monthNames[currentMonth]} ${currentYear}`;
 
+// Empty cells for days before 1st of the month
 for (let i = 0; i < firstDay; i++) {
-  const emptyCell = document.createElement('div');
-  calendar.appendChild(emptyCell);
+    const emptyCell = document.createElement('div');
+    emptyCell.classList.add('empty');
+    calendar.appendChild(emptyCell);
 }
 
+// Actual day cells
 for (let day = 1; day <= daysInMonth; day++) {
-  const dayElement = document.createElement('div');
-  dayElement.className = 'day';
-  if (day === currentDay) {
-    dayElement.classList.add('today');
-  }
-  dayElement.textContent = day;
-  calendar.appendChild(dayElement);
+    const dayElement = document.createElement('div');
+    dayElement.className = 'day';
+    dayElement.textContent = day;
+
+    if (day === currentDay) {
+        dayElement.classList.add('today');
+    }
+
+    dayElement.addEventListener("click", () => {
+        const dateInput = document.getElementById("date");
+        const selectedDate = new Date(currentYear, currentMonth, day);
+        dateInput.value = selectedDate.toISOString().split("T")[0];
+        highlightSelectedDate(dayElement);
+    });
+
+    calendar.appendChild(dayElement);
+}
+
+function highlightSelectedDate(selectedCell) {
+    document.querySelectorAll(".day").forEach(cell =>
+        cell.classList.remove("selected")
+    );
+    selectedCell.classList.add("selected");
 }
