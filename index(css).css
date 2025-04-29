@@ -7,6 +7,7 @@
     margin: 0 2em;
     text-align: center;
     border-radius: 50px;
+    box-shadow: 2px 2px 2px #23406e inset;
 }
 
 .greetings h1 {
@@ -14,15 +15,15 @@
 }
 
 .announcementHeader {
-    color: white;
+    color: #23406e;
     margin:auto 3vh;
-    border-bottom: white 1px solid;
+    border-bottom: #e45c43 1px solid;
 }
 
 .announcementContent {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: white 3px solid;
+    border-bottom: #e45c43 3px solid;
     padding: 1em 0;
 }
 
@@ -34,5 +35,5 @@
     color: black;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 1px 1px 1px #000 inset;
+    box-shadow: 1px 1px 1px #e45c43 inset;
 }

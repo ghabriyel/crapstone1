@@ -1,12 +1,12 @@
 html {
     scroll-behavior: smooth;
-    scrollbar-color: #f9f9f9 #fd9412;
+    scrollbar-color:  #e45c43 #f9f9f9;
     scrollbar-width:thin;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(255, 165, 20, 0.7);
+    background-color: #f9f9f9;
 
 }
 
@@ -29,13 +29,13 @@ nav a { /* for the menu link dont touch, cleans the anchor */
     align-items: center;
     gap: 0.625rem;
     padding: 0.625rem 0.875rem;
-    color: black;
+    color: #23406e;;
     text-decoration: none;
     transition: 0.5s ease-in-out;
 }
 
 nav a:hover { /* for the menu link hover dont touch*/
-    color: white;
+    color: #e45c43;
 }
 
 .logo img { /* for the logo dont touch, if you touch this the logo fucks up */
@@ -50,7 +50,7 @@ nav a:hover { /* for the menu link hover dont touch*/
     border-radius: 10px;
     text-align: center;
     width: 70%;
-    color: orangered;
+    color: #23406e;
     opacity: 0.7;
 }
 
@@ -58,7 +58,7 @@ nav a:hover { /* for the menu link hover dont touch*/
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border: none;
-    background-color: orange;
+    background-color: #23406e;
     color: white;
     font-size: 1rem;
 
@@ -93,7 +93,7 @@ nav a:hover { /* for the menu link hover dont touch*/
     width: 100%;
     border-radius: 20px 0px 0px 20px;
     text-align: center;
-    color: orangered;
+    color: #23406e;
 }
 
 .searchInput:focus {
@@ -138,7 +138,7 @@ thead{
 }
 
 #usersTableBody {
-    border: 1px solid #fd9412;
+    border: 1px solid #23406e;
 }
 
 .editUser {
