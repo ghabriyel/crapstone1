@@ -16,8 +16,7 @@
                     <img src="logo.png" alt="Logo">
                 </div>
                 <ul class="headerLinks">
-                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
-                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="index.html"><span>Home</span></a></li>
                     <li><a href="schedule.html"><span>Mass Schedule</span></a></li>
                     <li><a href="events.html"><span>Events</span></a></li>
                     <li><a href="announcements.html"><span>Announcements</span></a></li>
@@ -28,9 +27,6 @@
         </aside>
 
         <main>
-            <div class="welcome-section">
-                <h1>Church Events</h1>
-            </div>
             <div class="dashboard-content">
                 <h1>Church Events</h1>
                 <div class="card-container">
@@ -84,10 +80,20 @@
                             <p><strong>Time:</strong> <span class="time"></span></p>
                         </div>
                     </div>
+                    <div class="event-card form-group">
+                        <input type="text" placeholder="Event Name" class="searchInput SanitizeInputField eventName" id="eventName">
+                        <input type="text" placeholder="Event Description" class="searchInput eventDesc" id="eventDesc">
+                        <div class="event-details">
+                            <p><strong>Date:</strong> <input type="date" class="searchInput" id="eventDate"></p>
+                            <p><strong>Time:</strong> <input type="time" class="searchInput" id="eventTime"></p>
+                        </div>
+                        <button type="button" class="formButton" id="addEventButton">Add Event</button>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
     <script src="sidebar_function.js"></script>
+    <script src="(js)text_sanitizer.js"></script>
 </body>
 </html>

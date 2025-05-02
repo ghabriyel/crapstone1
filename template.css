@@ -1,4 +1,4 @@
-html {
+html {  /*this is as straightforward as it is, it's for fucking scrollbar, doesnt need to be touched */
     scroll-behavior: smooth;
     scrollbar-color:  #e45c43 #f9f9f9;
     scrollbar-width:thin;
