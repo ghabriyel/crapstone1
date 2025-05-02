@@ -1,57 +1,41 @@
-/* Sidebar CSS  dont touch a single thing here*/
-
-#sidebarToggle {
-    background: none;
-    border: none;
-    color: black;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
 aside {
     position: fixed;
     inset: 0 auto 0 0;
-    padding: 1rem;
-    width: 80px;
+    width: 225px;
+    padding: 1rem 2rem 1rem 1rem;
     background-color: #f8f3e3;
     backdrop-filter: blur(10px);
-    box-shadow: 3px 3px 3px #23406e;
+    box-shadow: 3px 3px 3px #e45c43;
+    transition: width 0.3s;
+    overflow: hidden;
 }
 
 #layoutWrapper {
     display: flex;
 }
 
-#sidebar {
-    width: 225px;
-    padding-right: 2rem;
-    transition: width 0.3s;
-    margin-right: 5rem;
-
+/* Collapse the sidebar when not hovered */
+aside:not(:hover) {
+    width: 80px;
 }
 
-#sidebar.collapsed {
-    width: 5rem;
-    overflow: hidden;
+/* Adjust content margin when sidebar is collapsed */
+#mainContent {
+    margin-left: 225px;
+    transition: margin-left 0.3s;
 }
 
-#sidebar.collapsed ~ #mainContent {
+aside:not(:hover) ~ #mainContent {
     margin-left: 80px;
 }
 
-#sidebar .headerLinks span {
-    transition: opacity 0.3s ease;
+/* Hide the link text when sidebar is collapsed */
+.headerLinks span {
+    opacity: 1;
     white-space: nowrap;
+    transition: opacity 0.3s;
 }
 
-#sidebar.collapsed .headerLinks a:not(#sidebarToggle) {
-    pointer-events: none;
+aside:not(:hover) .headerLinks span {
     opacity: 0;
-    width: 0;
-    overflow: hidden;
-}
-
-#sidebar.collapsed #arrowIcon {
-    transform: rotate(180deg);
 }

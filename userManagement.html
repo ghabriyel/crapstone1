@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
-    <link rel="stylesheet" href="template.css">
     <link rel="stylesheet" href="sidebar(css).css">
+    <link rel="stylesheet" href="template.css">
     <link rel="stylesheet" href="userManagement(css).css">
 </head>
 <body>
     
-    <div class="layoutWrapper">
+    <div id="layoutWrapper">
         <aside id="sidebar">
             <nav>
                 <div class="logo">
                     <img src="logo.png" alt="Logo">
                 </div>
                 <ul class="headerLinks">
-                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
-                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="index.html"><span>Home</span></a></li>
                     <li><a href="#"><span>Schedule</span></a></li>
                     <li><a href="#"><span>Events</span></a></li>
                     <li><a href="#"><span>Announcements</span></a></li>
@@ -33,8 +32,8 @@
                 <div class="searchBar">
                     <input type="text" class="SanitizeInputField searchInput" placeholder="search">
                     <button class="searchButton"><svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" height="0.8rem" viewBox="0 0 24 24">
-                        <circle cx="10" cy="10" r="7" stroke="black" stroke-width="2" fill="none"/>
-                        <line x1="15" y1="15" x2="22" y2="22" stroke="black" stroke-width="2"/>
+                        <circle cx="10" cy="10" r="7" stroke="#e45c43" stroke-width="2" fill="none"/>
+                        <line x1="15" y1="15" x2="22" y2="22" stroke="#e45c43" stroke-width="2"/>
                       </svg></button>
                 </div>
                 <div class="accountButtons">
@@ -62,10 +61,24 @@
                                 <td>dummy data</td>
                                 <td>
                                     <div class="editUser">
-                                        <button class="actionButton">Activate</button>
-                                        <button class="actionButton">Deactivate</button>
-                                        <button class="actionButton">Demote</button>
-                                        <button class="actionButton">Promote</button>
+                                        <!-- pop up menu button-->
+                                        <button class="hamburger"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="black">
+                                            <rect y="6" width="30" height="3" rx="1.5" />
+                                            <rect y="13.5" width="30" height="3" rx="1.5" />
+                                            <rect y="21" width="30" height="3" rx="1.5" />
+                                          </svg></button>
+                                          <!-- pop up menu content -->
+                                          <div class="hamburgerContent"> 
+                                            <button class="accountButton">Activate</button>
+                                            <button class="accountButton">view records</button>
+                                            <button class="accountButton">Manage booking</button>
+                                            <button class="accountButton">Manage Reservation</button>
+                                            <button class="accountButton">Manage billing</button>
+                                            <button class="accountButton">manage merch</button>
+                                            <button class="accountButton">manage Announcements</button>
+                                            <button class="accountButton">manage events</button>
+                                            <button class="accountButton">deactivate account</button>
+                                          </div>
                                     </div>
                                 </td>
                             </tr>
@@ -78,7 +91,7 @@
 
     </div>
     
-    <script src="sidebar_function.js"></script>
     <script src="(js)text_sanitizer.js"></script>
+    <script src="(js)userManagementHambuger.js"></script>
 </body>
 </html>
