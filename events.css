@@ -47,18 +47,3 @@
 .event-details strong {
     color: #333;
 }
-
-.eventName {
-    text-align: left;
-    height: 2vh;
-    border-radius: 0px;
-    font-size: large;
-    color: black;
-    margin-bottom: 5px;
-}
-
-.eventDesc {
-    text-align: left;
-    border-radius: 0px;
-    color: black;
-}

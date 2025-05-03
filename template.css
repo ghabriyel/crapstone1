@@ -114,3 +114,48 @@ nav a:hover { /* for the menu link hover dont touch*/
     background-color: white;
     border-radius: 0px 20px 20px 0px;
 }
+
+/* below is css for admin forms, only place you can touch*/
+
+.adminForms {
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.content-wrapper {
+    padding: 2em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.eventName {
+    text-align: left;
+    height: 2vh;
+    border-radius: 0px;
+    font-size: large;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.eventDesc {
+    text-align: left;
+    border-radius: 0px;
+    color: black;
+}
