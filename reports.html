@@ -16,28 +16,23 @@
                     <img src="logo.png" alt="Logo">
                 </div>
                 <ul class="headerLinks">
-                    <li><button id="sidebarToggle"><span id="arrowIcon">«</span></button></li>
-                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="index.html"><span>Home</span></a></li>
                     <li><a href="schedule.html"><span>Mass Schedule</span></a></li>
                     <li><a href="events.html"><span>Events</span></a></li>
                     <li><a href="announcements.html"><span>Announcements</span></a></li>
                     <li><a href="booking.html"><span>Booking</span></a></li>
-                    <li><a href="index.html"><span>Sign out</span></a></li>
+                    <li><a href="log"><span>Sign out</span></a></li>
                 </ul>
             </nav>
         </aside>
 
         <main>
-            <div class="welcome-section">
-                <h1>Reports Dashboard</h1>
-            </div>
             <div class="reports-container">
-                <div class="reports-header">
+                <header class="reports-header">
                     <h2>Available Reports</h2>
-                </div>
-                <div class="reports-grid">
-                    <!-- Sacrament Reports -->
-                    <div class="report-card">
+                </header>
+                <section class="reports-grid">
+                    <article class="report-card">
                         <h3>Sacrament Reports</h3>
                         <div class="report-content">
                             <p>View detailed reports about baptisms, weddings, and confirmations.</p>
@@ -49,10 +44,9 @@
                             </div>
                             <a href="sacrament-reports.html" class="view-report-btn">View Report</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Merchandise Reports -->
-                    <div class="report-card">
+                    <article class="report-card">
                         <h3>Merchandise Reports</h3>
                         <div class="report-content">
                             <p>Track merchandise sales, inventory, and popular items.</p>
@@ -64,15 +58,10 @@
                             </div>
                             <a href="merch-reports.html" class="view-report-btn">View Report</a>
                         </div>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </div>
         </main>
     </div>
-    <script src="sidebar_function.js"></script>
-    <script src="sidebar_function.js"></script>
-    <script src="general_number_sanitizer.js"></script>
-    <script src="text_sanitizer.js"></script>
-    <script src="reports.js"></script>
 </body>
 </html>
