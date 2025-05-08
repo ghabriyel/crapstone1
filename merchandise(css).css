@@ -1,9 +1,24 @@
+main {
+    background-color: #e6a86c;
+    font-family: 'Arial', sans-serif;
+    border-radius: 20px;
+}
+
+main h1 {
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 .merchArea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
     padding: 3rem;
+    background-color: #f8f3e3;
+    border: 2px solid #e45c43;
+    border-radius: 20px;
 }
 
 .merchItem {
@@ -11,7 +26,30 @@
     background-color: #f9f9f9;
     text-align: center;
     flex-direction: column;
-    border: 1px solid black;
+    border: 2px solid #e45c43;
     padding: 1rem;
     height: fit-content;
 }
+
+.merchItemOverlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.modularDiv {
+    position: fixed;
+    background-color: #f9f9f9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 20vw;
+    color: #23406e;
+    border-radius: 30px;
+    text-align: right;
+}
+
